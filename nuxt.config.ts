@@ -7,13 +7,13 @@ import pkg from "./package.json";
 
 // site env
 const siteConfig = {
-  siteTitle: process.env.SITE_TITLE || "IMSYY 站点监测",
-  siteDescription: process.env.SITE_DESCRIPTION || "一个简约的站点监测",
+  siteTitle: process.env.SITE_TITLE || "乌云WooYun永久地址发布监控页",
+  siteDescription: process.env.SITE_DESCRIPTION || "乌云WooYun永久地址发布监控页",
   siteKeywords: process.env.SITE_KEYWORDS || "站点监测,监测,监控",
   siteLogo: process.env.SITE_LOGO || "/favicon.ico",
   siteIcp: process.env.SITE_ICP || "",
   countDays: Number(process.env.COUNT_DAYS || 60),
-  showLink: process.env.SHOW_LINK === "true" || true,
+  showLink: process.env.SHOW_LINK === "true" || false,
   platform: process.env.DEPLOYMENT_PLATFORM || "cloudflare",
   version: pkg.version,
 };
